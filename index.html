@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="caption">
+        <h1>CRUD</h1>
+        <h3>products management system</h3>
+      </div>
+
+      <div class="inputs">
+        <div class="title">
+          <input placeholder="title" id="title" type="text" />
+          <div class="operations">
+            <input onkeyup="getTotal()" id="price" placeholder="price" type="number" />
+            <input onkeyup="getTotal()" id="taxes" placeholder="taxes" type="number" />
+            <input onkeyup="getTotal()" id="ads" placeholder="ads" type="number" />
+            <input onkeyup="getTotal()" id="discount" placeholder="discount" type="number" />
+            <small onkeyup="getTotal()" id="total"></small>
+          </div>
+
+          <input placeholder="Count" id="Count" type="number" />
+          <input placeholder="Category" id="Category" type="text" />
+          <button id="createbtn">Create</button>
+          <input placeholder="Search" id="searchInp" type="text" />
+          <div class="searchbtns">
+            <button id="searchTitle"    onclick="searchMoodfun(this.id)">Search By Title</button>
+            <button id="searchCategory" onclick="searchMoodfun(this.id)">Search By Category</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='deleteAll'></div>
+    <table class="table"> 
+      <thead>
+        <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>taxs</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>category</th>
+        <th>update</th>
+        <th>delete</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
